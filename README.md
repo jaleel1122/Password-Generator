@@ -1,8 +1,10 @@
 # React + Tailwind
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules. One top of the standard Vite setup, [tailwindcss](https://tailwindcss.com/) is installed and ready to be used in React components.
+live Demo :
+https://p8plt6-5173.csb.app/ 
 
-Additional references:
-* [Getting started with Vite](https://vitejs.dev/guide/)
-* [Tailwind documentation](https://tailwindcss.com/docs/installation)
+or
+
+https://p7znmf-5173.csb.app/
+
 
