@@ -39,14 +39,14 @@ function App() {
   return (
     <>
       <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-gray-700 via-gray-800 to-gray-900">
-        <div className="bg-gray-850 text-gray-100 p-8 rounded-3xl shadow-2xl w-[500px] border">
+        <div className="bg-gray-850 text-gray-100 p-8 rounded-3xl shadow-2xl w-[500px] border main-card">
+          {" "}
           {/* Heading */}
           <h1 className="text-2xl font-bold text-center mb-8 text-white tracking-wide">
             Password Generator
           </h1>
-
           {/* Password Display */}
-          <div className="flex items-center gap-3 mb-8">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mb-8">
             <input
               type="text"
               placeholder="password"
@@ -58,18 +58,17 @@ function App() {
             <button
               onClick={copyToClipboard}
               className="px-6 py-3 bg-gradient-to-r from-purple-500 to-indigo-500 
-             hover:from-purple-600 hover:to-indigo-600 
-             rounded-full shadow-lg font-semibold 
-             transition-transform transform active:scale-95"
+      hover:from-purple-600 hover:to-indigo-600 
+      rounded-full shadow-lg font-semibold 
+      transition-transform transform active:scale-95"
             >
               Copy
             </button>
           </div>
-
           {/* Length control */}
-          <div className="flex items-center justify-between mb-8">
+          <div className="flex items-center justify-between mb-8 length-control">
             <span className="text-gray-300 text-lg">
-              Password length:{" "}
+              Password length :{" "}
               <span className="font-bold text-white">{length}</span>
             </span>
 
@@ -96,10 +95,9 @@ function App() {
               </button>
             </div>
           </div>
-
           {/* Character options */}
-          <div className="flex items-center gap-2 mb-4">
-            <span className="text-gray-300 font-medium">Characters used:</span>
+          <div className="flex items-center gap-2 mb-4 char-options">
+            <span className="text-gray-300 font-medium">Characters used :</span>
             <div className="flex gap-6 flex-wrap">
               <label className="flex items-center gap-2 cursor-pointer">
                 <input
@@ -144,7 +142,6 @@ function App() {
               </label>
             </div>
           </div>
-
           {/* Generate button */}
           {/* <button className="w-full mt-8 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 rounded-full font-semibold shadow-lg transition">
             Generate
